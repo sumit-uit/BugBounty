@@ -3,4 +3,5 @@
 - find all subdomains 
 - Tools: subfinder, https://crt.sh/
 - Find live domains 
-- Tools httpx, crt.sh with API (curl -s https://crt.sh/\?o\=paypal\&output\=json )
+- Tools httpx, crt.sh with API (curl -s https://crt.sh/\?o\=paypal\&output\=json -o Paypal.txt)
+ cat Paypal.txt | rev | cut -d "." -f 1,2 | rev
