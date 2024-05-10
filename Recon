@@ -7,4 +7,7 @@
  └─$ cat  Paypal.txt | jq -r '.[].common_name' | sed 's/\*//g' | sort -u | rev | cut -d "." -f 1,2 | rev
 - use httpx to find live targets 
   httpx -l Paypal.txt -title -status-code -tech-detect -follow-redirects
-- Do directory bruteforcing 
+- Do directory bruteforcing
+- kiteRunner for API Endpoints discovery
+   https://github.com/assetnote/kiterunner
+
